@@ -1,0 +1,15 @@
+<?php
+
+// Doctrine (db)
+$app['db.options'] = array(
+	'driver'   => 'pdo_mysql',
+	'charset'  => 'utf8',
+	'host'     => 'host',  // Mandatory for PHPUnit testing
+	'port'     => '3306',
+	'dbname'   => 'db_domoAPI',
+	'user'     => 'user',
+	'password' => 'pwd',
+);
+
+// enable the debug mode
+$app['debug'] = true;
